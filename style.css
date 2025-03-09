@@ -1,0 +1,81 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  color: #333;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between; /* İlk ve son div yan yana */
+  align-items: center; /* Yatay hizalama */
+}
+.player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 70px;
+}
+.player h1 {
+  font-size: 40px;
+  font-weight: 50;
+}
+#player1 {
+  width: 400px;
+  height: 500px;
+  background-color: #c7365f;
+}
+#player2 {
+  width: 400px;
+  height: 500px;
+  background-color: #f4bdcc;
+}
+.box {
+  width: 170px;
+  height: 65px;
+  background-color: rgb(171, 14, 56);
+  border-radius: 5%;
+  color: white;
+  text-align: center;
+  padding-bottom: 8%;
+}
+.box h3,
+h4 {
+  font-weight: 50;
+}
+.kontrol {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 150px;
+}
+
+.btn {
+  background-color: rgba(255, 255, 255, 0.6);
+  --backdrop-filter: blur(10px);
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+}
+.btn--roll {
+  transform: translateY(145px);
+}
+.zar {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  transform: translateY(-100px);
+}
+.hidden {
+  visibility: hidden;
+}
